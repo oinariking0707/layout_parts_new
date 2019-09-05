@@ -21,7 +21,7 @@
   padding: 10px 10px;
   text-align: center;
 }
-.table tr:nth-child(odd){
+.table tr:last-child{
   background-color: #ecf1f2;
 }
 
