@@ -2,17 +2,17 @@
 
 /* 回答はここに書いてね */
 /*左右揃え*/
-.box-1{
+.box-align{
   text-align: center;
 }
-.text-1{
+.text-align{
   display: inline-block;
   background-color: #e6f2ff;
   width: 90px;
   padding: 10px 0;
 }
 
-.text-2{
+.text-margin{
   background-color: #e6f2ff;
   width: 90px;  
   padding: 10px 10px;
@@ -22,22 +22,20 @@
 
 
 /*左右天地*/
-.box-3{
+.text-table-flex{
+  display: inline-block;
+    padding: 10px;
+    background-color: #FFF;
+}
+.box-table{
   display: table;
 }
-.box-3-table{
+.box-table-cell{
   display: table-cell;
   background-color: #ECF1F2;
   text-align: center;
   vertical-align: middle;
 }
-/*左右天地でtext使い回し*/
-.text-3{
-  display: inline-block;
-    padding: 10px;
-    background-color: #FFF;
-}
-
 .box-4{
   display: flex;
   justify-content: center;
@@ -46,10 +44,10 @@
 
 
 /*posision固定*/
-.box-5{
+.box-position-fixed{
   position: relative;
 }
-.text-5{
+.text-position-fixed{
   position: absolute;
   top: 0;
   right: 0;
@@ -60,10 +58,10 @@
   height: 30px;
 }
 /*position可変*/
-.box-6{
+.box-position-variable{
   position: relative;
 }
-.text-6{
+.text-position-variable{
   position: absolute;
   top: 50%;
   left: 50%;
