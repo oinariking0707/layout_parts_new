@@ -1,5 +1,257 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.parts-box div{
+  display: inline-block;
+  cursor: pointer;
+}
+.parts-box div:nth-child(1){
+  background-color: #00bcd4;
+  color: #fff;
+}
+.parts-box div:nth-child(2){
+  background-color: #ff4081;
+  color: #fff;
+}
+.parts-box div:nth-child(3){
+  background-color: #e5e5e5;
+  color: #fff;
+}
+.parts-box div:nth-child(4){
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 1px 6px rgba(0,0,0,.12);
+  
+}
+/*small*/
+.size_1 div{
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 10px;
+  padding: 0 15px;
+  border-radius: 3px;
+}
+.size_1 div:first-child{
+  margin: 0;
+}
+/*middle*/
+.size_2 div{
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+}
+.size_2 div:first-child{
+  margin: 0;
+}
+/*large*/
+.size_3 div{
+  font-size: 24px;
+  line-height: 38px;
+  margin-left: 10px;
+  padding: 0 25px;
+  border-radius: 7px;
+}
+.size_3 div:first-child{
+  margin: 0;
+}
 
+
+.warp{
+  width: 900px;
+  height: 900px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.left{
+  position: absolute;
+}
+.left p{
+  margin: 30px;
+}
+
+/*フォーム*/
+/*init初期化である為一番の上に書く*/
+.in-init{
+  background: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;/*セレクトのデフォルト要素を消す*/
+}
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.form{
+  width: 700px;
+  background-color: #ecf1f2;
+  padding: 20px;
+  margin: 0 auto;  
+}
+.form-title{
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-title::before{
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+}
+.form-title-text{
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 10px;
+  background-color: #ecf1f2;/*font-title線を消す為*/
+}
+.left1{
+  float: left;
+  width: 300px;
+}
+.left1-box{
+  margin-bottom: 20px;
+}
+.left1-box-title{
+  float: left;
+  width: 100px;
+  line-height: 25px;
+  text-align: right;
+}
+.dot{
+  color: #f00;
+}
+/*radioメニュー*/
+.left1-radio{
+  cursor: pointer;
+}
+.left1-radio-btn{
+  display: none;
+}
+.left1-radio-text{
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+.left1-radio-text::before{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -8px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  content: "";
+}
+/*area-boxメニュー*/
+.area-box-position{
+  position: relative;
+}
+.area-in{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+}
+/*area-boxの下向き矢印を入れる*/
+.area-box-position::after{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  content: '';
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.left1-box-content{
+  float: right;
+  width: 180px;
+}
+.in{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
+.left1-box li{
+  margin-top: 20px;
+}
+.left1-box li:first-child{
+  margin: 0px;
+}
+
+.left-box-bottom{
+  text-align: right;
+}
+.left-bottom-btn{
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.check-box-btn{
+  display: none;
+}
+.check-box-text{
+  position: relative;
+  padding-left: 24px;
+  display: inline-block;
+}
+.check-box{
+  text-align: right;
+}
+/*check-btn配置*/
+.check-box-text::before{
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  content: '';  
+  margin-top: -9px;
+}
+/*rigth-box部分*/
+.rigth-box{
+ float: right;
+ width: 380px;
+}
+.rigth-box-text{
+  border-radius: 3px;
+  font-size: 12px;
+  width: 100%;
+  height: 203px;
+  padding: 10px;
+  box-sizing: border-box;
+  resize: none;
+  background-color: #fff;
+
+}
 /* 回答はここに書いてね */

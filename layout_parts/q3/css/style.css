@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.table{
+  border: solid #dedede 1px;
+  table-layout: fixed;
+  width: 100%;
+}
+th{
+  background-color: #2244aa;
+  color: #fff;
+  border: solid #dedede 1px;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 10px 10px;
+}
+td{
+  border: solid #dedede 1px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 10px 10px;
+  text-align: center;
+}
+.caluman:nth-child(odd){
+  background-color: #ecf1f2;
+}
 
+.caluman:nth-child(5){
+  border-bottom: dashed #000 2px;
+}
 /* 回答はここに書いてね */

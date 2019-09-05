@@ -1,5 +1,91 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+/*float問題*/
+.float-main{
+height: 210px;
+ 
+}
+.float-box{
+  font-size: 16px;
+  width: 225px;
+  margin-left:  50px;
+  float: left;
+  box-sizing: border-box;
+}
+.float-box:first-child{
+  margin-left: 0px;
+}
 
+/*table問題*/
+.table-main{
+  border-collapse: separate;
+  display: table;
+  width: 100%;
+}
+.table-box{
+  display: table-cell;
+  width: 225px;
+  margin-left: 50px;
+  padding-left: 50px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.table-box:first-child{
+  padding: 0;
+}
+
+/*inline-block問題*/
+.inline-font{
+  font-size: 0px;
+}
+.inline-box{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 225px;
+  vertical-align: middle;
+  font-size: 16px;
+  margin-left: 50px;
+}
+.inline-box:first-child{
+  margin-left: 0px;
+}
+
+/*flex問題*/
+.flex-main{
+  display: flex;/*親に横並び*/
+justify-content: space-around;/*スペースについて*/
+align-items: flex-end; /*上下を揃える*/
+}
+.flex-box{
+width: 225px;
+box-sizing: border-box;
+vertical-align: middle;
+}
+
+/*inline-marginのミックス*/
+.in-ma-main{
+  width: 100%;
+  font-size: 0;
+}
+.in-ma-box{
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+.in-ma-box2{
+  display: inline-block;
+  margin-left: -300px;
+  padding-left: 350px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.in-ma-text{
+  font-size: 16px;
+}
 /* 回答はここに書いてね */
