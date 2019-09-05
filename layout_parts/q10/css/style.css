@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.wrap{
+.callout{
   width: 500px;
   margin: 0 auto;
-}
-.callout{
   position: relative;
   border: 5px solid #222;
   padding: 20px;
@@ -19,21 +17,21 @@
   display: block;
   width: 0;
   height: 0;
-  left: 30px;
+  left: 50px;
 }
 
 
 .callout::before{
-  bottom: -15px;
-  border-top: 10px solid #222;
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
+  bottom: -20px;
+  border-top: 20px solid #222;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
 }
 .callout::after{
-  bottom: -10px;
-  border-top: 12px solid #fff;
-  border-right: 15px solid transparent;
-  border-left: 15px solid transparent;
+  bottom: -13px;
+  border-top: 16px solid #fff;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
 }
  
 .text{
