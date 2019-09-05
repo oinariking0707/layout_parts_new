@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
 .head_box{
   width: 900px;
   margin: 0 auto;
@@ -25,9 +30,4 @@
   line-height: 16px;
 }
 
-.clearfix:after{
-  display: block;
-  content: "";
-  clear: both;
-}
 /* 回答はここに書いてね */
