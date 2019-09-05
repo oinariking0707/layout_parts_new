@@ -5,72 +5,57 @@
   display: inline-block;
   cursor: pointer;
 }
-.parts-box div:nth-child(1){
+.parts-blue{
   background-color: #00bcd4;
   color: #fff;
 }
-.parts-box div:nth-child(2){
+.parts-red{
   background-color: #ff4081;
   color: #fff;
 }
-.parts-box div:nth-child(3){
+.parts-grew{
   background-color: #e5e5e5;
   color: #fff;
 }
-.parts-box div:nth-child(4){
+.parts-white{
   background-color: #fff;
   color: #222;
   box-shadow: 0 1px 6px rgba(0,0,0,.12);
-  
+
 }
 /*small*/
-.size_1 div{
+.small{
   font-size: 16px;
   line-height: 26px;
   margin-left: 10px;
   padding: 0 15px;
   border-radius: 3px;
 }
-.size_1 div:first-child{
+.small:first-child{
   margin: 0;
 }
 /*middle*/
-.size_2 div{
+.middle{
   font-size: 20px;
   line-height: 32px;
   margin-left: 10px;
   padding: 0 20px;
   border-radius: 5px;
 }
-.size_2 div:first-child{
+.middle:first-child{
   margin: 0;
 }
 /*large*/
-.size_3 div{
+.large{
   font-size: 24px;
   line-height: 38px;
   margin-left: 10px;
   padding: 0 25px;
   border-radius: 7px;
 }
-.size_3 div:first-child{
+.large:first-child{
   margin: 0;
 }
-
-
-.warp{
-  width: 900px;
-  height: 900px;
-  background-color: #f2f2f2;
-  position: relative;
-}
-.left{
-  position: absolute;
-}
-.left p{
-  margin: 30px;
-}
-
 /*フォーム*/
 /*init初期化である為一番の上に書く*/
 .in-init{
@@ -88,6 +73,18 @@
   clear: both;
 }
 
+.in{
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
+.in:focus{
+  outline: 3px solid #00bcd4;
+}
 .form{
   width: 700px;
   background-color: #ecf1f2;
@@ -115,14 +112,14 @@
   padding-right: 10px;
   background-color: #ecf1f2;/*font-title線を消す為*/
 }
-.left1{
+.left{
   float: left;
   width: 300px;
 }
-.left1-box{
+.left-box{
   margin-bottom: 20px;
 }
-.left1-box-title{
+.left-box-title{
   float: left;
   width: 100px;
   line-height: 25px;
@@ -132,18 +129,18 @@
   color: #f00;
 }
 /*radioメニュー*/
-.left1-radio{
+.left-radio{
   cursor: pointer;
 }
-.left1-radio-btn{
+.left-radio-btn{
   display: none;
 }
-.left1-radio-text{
+.left-radio-text{
   position: relative;
   display: inline-block;
   padding: 3px 3px 3px 20px;
 }
-.left1-radio-text::before{
+.left-radio-text::before{
   position: absolute;
   top: 50%;
   left: 0;
@@ -155,8 +152,8 @@
   background-color: #fff;
   content: "";
 }
-.left1-radio-btn:checked+
-.left1-radio-text:after{
+.left-radio-btn:checked+
+.left-radio-text:after{
 position: absolute;
 top: 50%;
 left: 4px;
@@ -184,34 +181,25 @@ content: '';
 /*area-boxの下向き矢印を入れる*/
 .area-box-position::after{
   position: absolute;
-  top: 10%;
-  right: 10px;
-  width: 10px;
-  height: 10px;
+  top: 17%;
+  right: 12px;
+  width: 8px;
+  height: 8px;
   display: block;
   content: '';
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
   transform: rotate(45deg);
   pointer-events: none;
 }
-.left1-box-content{
+.left-box-content{
   float: right;
   width: 180px;
 }
-.in{
-  width: 100%;
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 3px;
-  background-color: #fff;
-  font-size: 12px;
-  line-height: 12px;
-}
-.left1-box li{
+.left-box li{
   margin-top: 20px;
 }
-.left1-box li:first-child{
+.left-box li:first-child{
   margin: 0px;
 }
 
@@ -227,6 +215,10 @@ content: '';
   line-height: 26px;
   cursor: pointer;
 }
+.left-bottom-btn:active{
+  background-color: #fff;
+  color: #00bcd4;
+}
 .check-box-btn{
   display: none;
 }
@@ -238,6 +230,7 @@ content: '';
 .check-box{
   text-align: right;
 }
+
 /*check-btn配置*/
 .check-box-text:before{
   background-color: #fff;
@@ -264,7 +257,6 @@ content: '';
   transform: rotate(45deg);
   
 }
-
 /*rigth-box部分*/
 .rigth-box{
  float: right;
@@ -280,5 +272,8 @@ content: '';
   resize: none;
   background-color: #fff;
 
+}
+.rigth-box-text:focus{
+  outline: 3px solid #00bcd4;
 }
 /* 回答はここに書いてね */

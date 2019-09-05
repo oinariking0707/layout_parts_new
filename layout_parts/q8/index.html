@@ -32,37 +32,34 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-             <div class="parts-box size_1"> 
-                <div>common</div>
-                <div>error</div>
-                <div>disabled</div>
-                <div>shadow</div>
-             </div>
-        </div>
-
+              <div class="parts-box">
+                <div class="parts-blue small">common</div>
+                <div class="parts-red small">error</div>
+                <div class="parts-grew small">disabled</div>
+                <div class="parts-white small">shadow</div>
+              </div>
+          </div>
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-             <div class="parts-box size_2">
-              <div>common</div>
-              <div>error</div>
-              <div>disabled</div>
-              <div>shadow</div>
+              <div class="parts-box">
+                <div class="parts-blue middle">common</div>
+                <div class="parts-red middle">error</div>
+                <div class="parts-grew middle">disabled</div>
+                <div class="parts-white middle">shadow</div>
               </div>
             </div>
           
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-             <div class="parts-box size_3">
-              <div>common</div>
-              <div>error</div>
-              <div>disabled</div>
-              <div>shadow</div>
+              <div class="parts-box">
+                <div class="parts-blue large">common</div>
+                <div class="parts-red large">error</div>
+                <div class="parts-grew large">disabled</div>
+                <div  class="parts-white large">shadow</div>
               </div>
-             </div>
+          </div>
           <!-- 回答はここに書いてね -->
-        </div>
-
         <div class="box__inner">
           <h3 class="box__headline">
             <p class="box__headline__text">ー Q8-2 フォーム ー</p>
@@ -108,33 +105,33 @@
           <div class="q8">
             <form class="form">
               <div class="form-title">
-                 <p class="form-title-text">Form Exercise</p>
+                <p class="form-title-text">Form Exercise</p>
               </div>
               <div class="clearfix">
-                <div class="left1">
-                  <ul class="left1-box">
+                <div class="left">
+                  <ul class="left-box">
                     <li class="clearfix">
-                      <p class="left1-box-title">名前<span class="dot">*</span></p>
-                        <div class="left1-box-content">
-                          <input class="in in-init" type="text" name="name">
+                      <p class="left-box-title">名前<span class="dot">*</span></p>
+                        <div class="left-box-content">
+                          <input class="in in-init in-outline" type="text" name="name" required>
                         </div>
                     </li>
                     <li class="clearfix">
-                      <p class="left1-box-title">性別</p>
-                        <div class="left1-box-content">
-                          <label class="left1-radio">
-                            <input class="left1-radio-btn" type="radio" name="nenrei" value="men">
-                              <span class="left1-radio-text">男性</span>
+                      <p class="left-box-title">性別</p>
+                        <div class="left-box-content">
+                          <label class="left-radio">
+                            <input class="left-radio-btn" type="radio" name="nenrei" value="men">
+                              <span class="left-radio-text">男性</span>
                             </label>
-                          <label class="left1-radio">
-                            <input class="left1-radio-btn" type="radio" name="nenrei" value="women">
-                              <span class="left1-radio-text">女性</span>
+                          <label class="left-radio">
+                            <input class="left-radio-btn" type="radio" name="nenrei" value="women">
+                              <span class="left-radio-text">女性</span>
                           </label>       
                         </div>
                       </li>
                       <li class="clearfix">
-                        <p class="left1-box-title">出身</p>
-                        <div class="left1-box-content area-box-position">
+                        <p class="left-box-title">出身</p>
+                        <div class="left-box-content area-box-position">
                           <select name="area" class="in-init area-in">
                             <option value="tokyo">東京</option>
                             <option value="oosaka">大阪</option>
@@ -144,20 +141,20 @@
                         </div>
                       </li>
                       <li class="clearfix">
-                        <p class="left1-box-title">Eメール<span class="dot">*</span></p>
-                         <div class="left1-box-content">
+                        <p class="left-box-title">Eメール<span class="dot">*</span></p>
+                          <div class="left-box-content">
                            <!--input-requiredは入力必須時に配置（input内に）-->
                           <input type="email" placeholder="ex) hoge@gmail.com" name="email" required class="in in-init">
-                        </div>
+                          </div>
                       </li>
                       <li class="clearfix">
-                        <p class="left1-box-title">電話番号</p>
-                         <div class="left1-box-content">
-                          <input type="text" name="tell" placeholder="ex) 08012345678" required class="in in-init">
-                         </div>
+                        <p class="left-box-title">電話番号</p>
+                          <div class="left-box-content">
+                          <input type="text" name="tell" placeholder="ex) 08012345678" class="in in-init text-outline">
+                          </div>
                       </li>
                       <li class="clearfix">
-                    　　<div class="left1-box-content">
+                    　　<div class="left-box-content">
                           <div class="check-box">
                             <input type="checkbox" name="check" value="true" id="checkbox" class="check-box-btn">
                             <label for="checkbox" class="check-box-text">20歳以上です</label>
@@ -166,7 +163,7 @@
                       </li>
                   </ul> 
                   <div class="left-box-bottom">
-                   <button type="submit" class="left-bottom-btn in-init">送信</button>
+                    <button type="submit" class="left-bottom-btn in-init">送信</button>
                   </div>
               </div>
                 <div class="rigth-box">
