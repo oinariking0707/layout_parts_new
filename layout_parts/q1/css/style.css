@@ -7,14 +7,14 @@
   background-color: #eff3f4;
   padding: 20px;
 }
-.box_1{
+.in-box{
   width: 230px;
   margin-left: 20px;
   padding: 20px;
   background-color: #3274ae;
   float: left;
 }
-.box_1:first-child{
+.in-box:first-child{
   margin-left: 0px;
 }
 .text{
