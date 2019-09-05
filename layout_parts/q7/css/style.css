@@ -7,9 +7,6 @@
   clear: both;
 }
 /*float問題*/
-.float-main{
-  height: 220px;
-}
 .float-box{
   font-size: 16px;
   width: 225px;
@@ -72,12 +69,12 @@ vertical-align: middle;
   width: 100%;
   font-size: 0;
 }
-.in-ma-box{
+.in-ma-box-left{
   display: inline-block;
   width: 300px;
   vertical-align: top;
 }
-.in-ma-box2{
+.in-ma-box-rigth{
   display: inline-block;
   margin-left: -300px;
   padding-left: 350px;
