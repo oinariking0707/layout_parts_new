@@ -83,7 +83,7 @@
   line-height: 12px;
 }
 .in:focus{
-  outline: 3px solid #00bcd4;
+  box-shadow: 0 0 7px #00BCD4;
 }
 .form{
   width: 700px;
@@ -274,6 +274,6 @@ content: '';
 
 }
 .rigth-box-text:focus{
-  outline: 3px solid #00bcd4;
+  box-shadow: 0 0 7px #00BCD4;
 }
 /* 回答はここに書いてね */
