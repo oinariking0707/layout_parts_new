@@ -29,7 +29,7 @@
 }
 .callout::after{
   bottom: -13px;
-  border-top: 16px solid #fff;
+  border-top: 20px solid #fff;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
 }
