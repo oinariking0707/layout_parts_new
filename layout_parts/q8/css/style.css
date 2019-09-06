@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.parts-box div{
+.parts-box .sub{
   display: inline-block;
   cursor: pointer;
 }
-.parts-blue{
+.parts-common{
   background-color: #00bcd4;
   color: #fff;
 }
-.parts-red{
+.parts-error{
   background-color: #ff4081;
   color: #fff;
 }
-.parts-grew{
+.parts-disabled{
   background-color: #e5e5e5;
   color: #fff;
 }
-.parts-white{
+.parts-shadow{
   background-color: #fff;
   color: #222;
   box-shadow: 0 1px 6px rgba(0,0,0,.12);
