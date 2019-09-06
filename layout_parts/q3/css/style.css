@@ -26,6 +26,6 @@
 }
 
 .table tr:last-child{
-  border-bottom: dashed #000 2px;
+  border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */
